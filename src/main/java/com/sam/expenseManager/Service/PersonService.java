@@ -2,8 +2,6 @@ package com.sam.expenseManager.Service;
 
 import java.util.List;
 
-import javax.transaction.Transactional;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -24,7 +22,6 @@ public class PersonService {
 		repo.save(person);
 	}
 	
-	@Transactional
 	public int updateMailById(String mailId, long id) {
 		if(repo.existsById(id))
 		{
@@ -35,8 +32,6 @@ public class PersonService {
 			return 0;
 		}	
 	}
-	
-	@Transactional
 	public int updatePhoneById(String phoneNo, long id) {
 		if(repo.existsById(id))
 		{
@@ -47,8 +42,7 @@ public class PersonService {
 			return 0;
 		}
 	}
-	
-	@Transactional
+
 	public int updateMonthlyIncomeById(double monthlyIncome, long id) {
 		if(repo.existsById(id))
 		{
