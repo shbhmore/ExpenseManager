@@ -9,7 +9,7 @@ import com.sam.expenseManager.Model.Expense;
 import com.sam.expenseManager.Repo.ExpenseManagerRepo;
 
 @Service
-public class ExpenseManagerService {
+public class ExpenseService {
 	
 	@Autowired
 	ExpenseManagerRepo repo;
