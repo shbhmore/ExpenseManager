@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 import com.sam.expenseManager.Model.Expense;
 
 @Repository
-public interface ExpenseManagerRepo extends JpaRepository<Expense, Long>{
+public interface ExpenseRepo extends JpaRepository<Expense, Long>{
 
 }

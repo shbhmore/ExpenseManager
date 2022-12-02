@@ -19,6 +19,7 @@ public class HomeController {
 	
 	@GetMapping("getAllExpenses")
 	public List<Expense> getAllExpenses(){
+		System.out.println("Asked");
 		return eService.getAllExpenses();		
 	}
 	
